@@ -14,4 +14,4 @@
 
 4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
-- Side effects is you try to modify anything out side the body. useEffect
+- Side effects is you try to modify anything out side the body. You use useEffect
