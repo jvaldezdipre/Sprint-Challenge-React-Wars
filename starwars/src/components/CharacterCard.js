@@ -1,16 +1,16 @@
 // Make a card for each character
 import React from 'react';
-import { Card, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardHeader, CardTitle } from 'reactstrap';
 
-function CharacterCard(props) {
+function CharacterCard({ character }) {
   return (
     <div className='character-container'>
       <Card>
+        <CardHeader>{character.name}</CardHeader>
         <CardBody>
-          <CardTitle>Name: {props.name}</CardTitle>
-          <CardTitle>Height: {props.height}</CardTitle>
-          <CardTitle>Birth Year: {props.birth_year}</CardTitle>
-          <CardTitle>Gender: {props.gender}</CardTitle>
+          <CardTitle>Height: {character.height}</CardTitle>
+          <CardTitle>Birth Year: {character.birth_year}</CardTitle>
+          <CardTitle>Gender: {character.gender}</CardTitle>
         </CardBody>
       </Card>
     </div>
